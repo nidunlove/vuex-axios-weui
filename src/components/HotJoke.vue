@@ -15,9 +15,9 @@
                     </p>
                     <p>
                         <img :src="item.image0" alt="">
-                        <img :src="item.image1" alt="">
-                        <img :src="item.image2" alt="">
-                        <img :src="item.image3" alt="">
+                        <img v-if="item.image0!=item.image1" :src="item.image1" alt="">
+                        <img v-if="item.image1!=item.image2" :src="item.image2" alt="">
+                        <img v-if="item.image2!=item.image3" :src="item.image3" alt="">
                     </p>
                     <div class="weui-loadmore weui-loadmore_line">
                         <span class="weui-loadmore__tips">分割线</span>

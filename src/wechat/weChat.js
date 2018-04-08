@@ -63,7 +63,8 @@ wxApi.install = function(Vue, options) {
   Vue.prototype.getHttpWxConfig = function(callback) {
   	// var _this = this;
     //// myHost 我本地映射的 natapp的域名,安装并运行了 node_JS-SDK_signature。此项置为空""，根据实际地址访问 .
-    let myHost = "http://nidunlove.s1.natapp.cc";
+    // let myHost = "http://nidunlove.s1.natapp.cc";
+    let myHost = "";
     Vue.axios.post(myHost+"/wxToken/getsignature", { 'url': location.href.split('#')[0] }) //location.href.split('#')[0]
       .then(response => {
       	// console.log("getHttpWxConfig==");
