@@ -10,15 +10,28 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // proxyTable: {},
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: '0.0.0.0', // can be overwritten by process.env.HOST
+    // host: 'ygtp4k.natappfree.cc',
     port: 8084, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+
+    proxyTable: {
+       '/wxToken':{//此处并非一定和url一致。
+          //cd myGitRepository/repository/vuex-axios-weui/vuex-axios-weui/node_JS-SDK_signature node index.js
+          // target:'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ww0a9529e47596a49e&corpsecret=Bf12qqT5h6m8Xh7WpBJ2dgDA9Np2OCjBcz9YADZWqEE',
+          target:"http://localhost:1342",
+          changeOrigin:true,//允许跨域
+          pathRewrite:{
+            '^/wxToken': ''
+          }
+        }
+    },
 
     
     /**

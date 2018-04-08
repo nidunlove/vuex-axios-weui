@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="weui-flex__item">
-                    <div class="placeholder">vue-axios-weui</div>
+                    <div class="placeholder">{{headerTitle}}</div>
                 </div>
                 <div>
                     <div class="placeholder">
@@ -43,7 +43,8 @@ export default {
   name: 'SubFrame',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      headerTitle: 'vue-axios-weui'
     }
   },
   methods:{

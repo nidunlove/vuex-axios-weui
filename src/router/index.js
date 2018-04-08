@@ -7,6 +7,8 @@ import AboutMe from '@/components/AboutMe'
 
 import SubFrame from '@/components/SubFrame'
 import Weather from '@/components/Weather'
+import HotJoke from '@/components/HotJoke'
+import WeXinTest from '@/components/WeXinTest'
 
 
 Vue.use(Router)
@@ -41,6 +43,16 @@ export default new Router({
           path: '/Weather',
           name: 'Weather',
           component: Weather
+        },
+        {　　　　
+          path: '/HotJoke',
+          name: 'HotJoke',
+          component: HotJoke
+        },
+        {　　　　
+          path: '/WeXinTest',
+          name: 'WeXinTest',
+          component: WeXinTest
         }　
       ]
     }

@@ -25,18 +25,22 @@
             <p class="weui-grid__label">天气</p>
         <!-- </a> -->
     	</router-link>
-        <a href="javascript:;" class="weui-grid">
+    	<router-link to="/HotJoke" class="weui-grid">
+        <!-- <a href="javascript:;" class="weui-grid"> -->
             <div class="weui-grid__icon">
                 <img src="static/weui/images/icon_tabbar.png" alt="">
             </div>
-            <p class="weui-grid__label">Grid</p>
-        </a>
-        <a href="javascript:;" class="weui-grid">
+            <p class="weui-grid__label">热门段子</p>
+        <!-- </a> -->
+    	</router-link>
+    	<router-link to="/WeXinTest" class="weui-grid">
+        <!-- <a href="javascript:;" class="weui-grid"> -->
             <div class="weui-grid__icon">
                 <img src="static/weui/images/icon_tabbar.png" alt="">
             </div>
-            <p class="weui-grid__label">Grid</p>
-        </a>
+            <p class="weui-grid__label">微信测试</p>
+        <!-- </a> -->
+    	</router-link>
         <a href="javascript:;" class="weui-grid">
             <div class="weui-grid__icon">
                 <img src="static/weui/images/icon_tabbar.png" alt="">
