@@ -5,6 +5,7 @@
     <article class="weui-article">
            
             <section>
+                <h2>需要后端服务器支持，下载配置运行 node_JS-SDK_signature</h2>
                 <div class="weui-panel weui-panel_access">
                   <button @click="getNetworkType()" class="weui-btn weui-btn_primary">获得微信网络状态</button>
                   <div><span>微信网络状态：</span><span>{{networkType}}</span></div>

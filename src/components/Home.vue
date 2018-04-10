@@ -41,12 +41,14 @@
             <p class="weui-grid__label">微信测试</p>
         <!-- </a> -->
     	</router-link>
-        <a href="javascript:;" class="weui-grid">
+        <router-link to="/WeUiTest" class="weui-grid">
+        <!-- <a href="javascript:;" class="weui-grid"> -->
             <div class="weui-grid__icon">
                 <img src="static/weui/images/icon_tabbar.png" alt="">
             </div>
-            <p class="weui-grid__label">Grid</p>
-        </a>
+            <p class="weui-grid__label">WeUI测试</p>
+        <!-- </a> -->
+        </router-link>
         <a href="javascript:;" class="weui-grid">
             <div class="weui-grid__icon">
                 <img src="static/weui/images/icon_tabbar.png" alt="">

@@ -145,5 +145,42 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 	附： 运行需要 单独的node_JS-SDK_signature运行后端，本案例中未上传该包。微信注册和相关设置及域名。参考上面描述。
 
+## 加入 sass、less
+	参考： https://segmentfault.com/a/1190000008486436
+		http://www.jb51.net/article/136315.htm
+
+	npm install node-sass --save-dev
+	npm install sass-loader --save-dev
+
+	npm install less --save-dev
+	npm install less-loader --save-dev
+
+## 基于vue的loading 插件编写 2018.04.08 - 2018.04.09
+	参考：https://blog.csdn.net/sjn0503/article/details/75208217
+	为在axios能调用弹窗，也赋值给了window/
+	axios再次封装
+	参考：https://segmentfault.com/a/1190000012332982
+		https://blog.csdn.net/quanquanxiu/article/details/76718468
+
+## weui的测试
+	1. 直接用weui，报weui的undefined，引入weui
+		参考：https://www.npmjs.com/package/vue-weui
+		npm install --save weui
+		npm install vue-weui --save
+		(貌似不会更新了，还是自己调用把)
+	2. 
+		参考：https://segmentfault.com/q/1010000009078238
+
+		npm install --save weui.js
+		在需要用的地方(.vue 文件
+		import weui from 'weui.js'
+
+		dialog,弹窗按钮绑定。
+		参考： https://blog.csdn.net/hayre/article/details/60572435
+		无效(可能我写法有问题，以后再试)，
+		直接方法赋值，成功。
+
+
+
 
 

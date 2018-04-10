@@ -95,13 +95,13 @@ export default {
 
                 }, function(error){//获取地址位置报错
                   console.log("error");
-                  console.log(that);
+                  // console.log(that);
                   switch (error.code) {  
                     case error.PERMISSION_DENIED:  
                         that.currentLocation.msg = "用户拒绝对获取地理位置的请求。";  
                         break;  
                     case error.POSITION_UNAVAILABLE: 
-                        console.log(this); 
+                        // console.log(this); 
                         that.currentLocation.msg = "位置信息是不可用的。";  
                         break;  
                     case error.TIMEOUT:  
@@ -120,6 +120,10 @@ export default {
     },
     getWeatherData(){
         console.log(this);
+
+        // console.log(this.myloading.show());
+
+        // this.loading.show();
         // console.log(Vue);
         // console.log(this.$ajax);
 
@@ -129,11 +133,19 @@ export default {
         
         // Vue.axios.get("https://www.apiopen.top/weatherApi?city=上海")//无效（不知为何
         // this.$ajax.get("https://www.apiopen.top/weatherApi?city=上海")
+        // this.isShowLoading = true;
+        // this.loading.show();
+        
+        // this.myloading.show("加载天气");
+// alert("aa");
         this.axios.get("https://www.apiopen.top/weatherApi?city="+this.city)
         .then(response => {
             console.log(response);
             console.log(this);
             this.weather = response.data.data;
+            // this.myloading.hide();
+            // this.isShowLoading = false;
+            // Loading.hideLoading();
         })
     },
     showInput(){

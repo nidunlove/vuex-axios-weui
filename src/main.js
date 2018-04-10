@@ -9,11 +9,19 @@ import App from './App'
 
 import wxApi from './wechat/weChat'
 
+
+
+// import VueWeui from './wechat/weUi'
+
+
 //自定义的微信 api
 Vue.use(wxApi);
 
+
+
 // 引入静态资源
 require('./assets/style/common.css')
+require('./assets/style/loading.less')
 
 Vue.config.productionTip = false
 
