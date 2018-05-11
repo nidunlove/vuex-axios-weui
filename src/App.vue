@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    <!-- <Loading></Loading> -->
+    <!-- store 的loding -->
+    <Loading></Loading>
   </div>
 </template>
 

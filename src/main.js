@@ -9,7 +9,7 @@ import App from './App'
 
 import wxApi from './wechat/weChat'
 
-
+import Loading from './plugin/Loading' 
 
 // import VueWeui from './wechat/weUi'
 
@@ -18,6 +18,7 @@ import wxApi from './wechat/weChat'
 Vue.use(wxApi);
 
 
+Vue.use(Loading);
 
 // 引入静态资源
 require('./assets/style/common.css')
@@ -28,6 +29,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

@@ -11,6 +11,8 @@ import HotJoke from '@/components/HotJoke'
 import WeXinTest from '@/components/WeXinTest'
 import WeUiTest from '@/components/WeUiTest'
 
+import BaiDuAi from '@/components/BaiDuAi'
+
 
 Vue.use(Router)
 
@@ -60,6 +62,19 @@ export default new Router({
           path: '/WeUiTest',
           name: 'WeUiTest',
           component: WeUiTest
+        }　
+      ]
+    }
+    ,
+    {
+      path: '/BaiDuAi',
+      name: 'BaiDuAi',
+      component: BaiDuAi,
+      children: [　　　
+        {　　　　
+          path: '/Weather',
+          name: 'Weather',
+          component: Weather
         }　
       ]
     }

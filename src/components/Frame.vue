@@ -52,9 +52,9 @@
                         <p class="weui-tabbar__label">Home</p>
                     </span>
 
-                    <a href="javascript:;" class="weui-tabbar__item" @click="activeMu(1,'/Home')" :class="{ 'weui-bar__item_on': activeNum==1 }">
+                    <a href="javascript:;" class="weui-tabbar__item" @click="activeMu(1,'/BaiDuAi')" :class="{ 'weui-bar__item_on': activeNum==1 }">
                         <img src="static/weui/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
-                        <p class="weui-tabbar__label">通讯录</p>
+                        <p class="weui-tabbar__label">百度AI</p>
                     </a>
                     <a href="javascript:;" class="weui-tabbar__item" @click="activeMu(2,'/Home')" :class="{ 'weui-bar__item_on': activeNum==2 }">
                         <span style="display: inline-block;position: relative;">

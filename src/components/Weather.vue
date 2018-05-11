@@ -138,15 +138,22 @@ export default {
         
         // this.myloading.show("加载天气");
 // alert("aa");
+        console.log(this.$store);
+        let _this = this;
+        this.$store.dispatch('showloader');
         this.axios.get("https://www.apiopen.top/weatherApi?city="+this.city)
         .then(response => {
             console.log(response);
+            _this.$store.dispatch('hideloader');
             console.log(this);
             this.weather = response.data.data;
             // this.myloading.hide();
             // this.isShowLoading = false;
             // Loading.hideLoading();
-        })
+        }).catch(function (error) {
+          _this.$store.dispatch('hideloader');
+          console.log(error);
+        });
     },
     showInput(){
         this.isShowSearchText = false;

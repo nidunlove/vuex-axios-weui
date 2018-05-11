@@ -2,6 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+import stores from '../vuex/store.js'
 
 Vue.use(VueAxios, axios);
 
@@ -24,6 +25,18 @@ const Axios = axios.create({
     timeout: 60000
     // headers: {'X-Custom-Header': 'foobar'}
 });
+
+//请求根地址
+window.AIbaseURL = "http://127.0.0.1:3000";//
+window.AIallUrl = {
+    wordsUrl:window.AIbaseURL+"/AipOcrClient",//文字识别
+    languageUrl:window.AIbaseURL+"/AipNlpClient",//语言处理
+    faceUrl:window.AIbaseURL+"/AipFaceClient",//人脸识别
+    imgSerUrl:window.AIbaseURL+'/AipImageClassify',//图像识别
+    voiceUrl:window.AIbaseURL+"/AipSpeechClient",//语音合成
+    voicePlayUrl:window.AIbaseURL+"/", //语音合成，播放地址
+    // searchUrl:window.AIbaseURL+"/",//人脸搜索，图片查找,返回图片地址拼接
+}
 
 if (process.env.NODE_ENV == 'development') {
     axios.defaults.baseURL = '';
@@ -66,7 +79,9 @@ axios.interceptors.request.use(function(config){
     // } else {
     //     promiseArr[config.url] = cancel
     // }
-
+    // stores方式，需要写入对应模块，此处不重复
+    // stores.dispatch('showloader');
+    // 原生方式
      window.myloading.show("正在请求")
      return config;
    },function(error){

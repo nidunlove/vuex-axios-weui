@@ -159,6 +159,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	参考：https://blog.csdn.net/sjn0503/article/details/75208217
 	为在axios能调用弹窗，也赋值给了window/
 	axios再次封装
+	ES6 Promise 异步编程学习
 	参考：https://segmentfault.com/a/1190000012332982
 		https://blog.csdn.net/quanquanxiu/article/details/76718468
 
@@ -179,6 +180,24 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		参考： https://blog.csdn.net/hayre/article/details/60572435
 		无效(可能我写法有问题，以后再试)，
 		直接方法赋值，成功。
+
+## store的模块化 2018.04.18
+	1. 基于store 的loading插件
+	2. 可在axios中调用store方法，不同于原生调用
+	参考：
+		https://blog.csdn.net/sinat_35515778/article/details/72458195
+		https://segmentfault.com/a/1190000009101751
+		https://vuex.vuejs.org/zh-cn/actions.html
+
+## 百度AI开放平台,练习
+	参考：
+		https://ai.baidu.com/tech/imagerecognition/fine_grained
+		https://ai.baidu.com/docs#/ImageClassify-Node-SDK/top
+	1. 后台选择 node开发 sdk
+		http://ai.baidu.com/sdk
+	2. express 练习。集成 百度AI平台
+	3. 后台服务器 express 
+		https://github.com/nidunlove/BaiDu_AI_Express_Service
 
 
 
